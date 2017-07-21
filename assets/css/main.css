@@ -10,7 +10,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* Custom page header */
 .header {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-bottom: .05rem solid #e5e5e5;
 }
 /* Make the masthead heading the same height as the navigation */
@@ -42,11 +42,6 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
-}
 .container-narrow > hr {
   margin: 2rem 0;
 }
@@ -55,15 +50,12 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 3rem 0;
+  margin: 2.5rem 0 0 0;
 }
 .marketing p + h4 {
   margin-top: 1.5rem;
@@ -80,7 +72,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
@@ -88,15 +80,16 @@ body {
   }
 }
 
+.front-list > li, .front-list > a {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
 
-
-
-
-
-
-
-
-
+.front-img {
+  opacity: 0.85;
+  -webkit-filter: blur(1px);
+}
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Agile Approach to a PhD"
-date:   2017-07-15 19:28:01 -0500
+date:   2017-07-21 16:48:01 +1000
 ---
 As I mentioned in an earlier post (link), I've been working hard to stay on track during my PhD and make consistent progress. As a means of doing so, about halfway through I decided to start 'project managing' myself and my phd. This meant I actually set myself up with small sprint cycles, incorporating many agile project features into my daily rituals. 
 
