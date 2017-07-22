@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello, World!"
 date:   2017-07-15 19:28:01 +1000
+tagline: 'Testing'
 ---
 Inspired by comments on Andrej Karpathy's own website and academic blog, I've decided to set up my own research blog. There are plenty of resources out there that go into the merits of blogging as part of your research or PhD, not the least of which is that it actually <i>gets me writing</i>. As many others have anecdotally told me, I have struggled to maintain motivation and dedication during some parts of my candidature, especially when it comes to jotting down notes or ideas, or developing drafts of my impending thesis. As someone who can get very consumed and attached to their work, this hasn't sat well for me, leading me to pursue a variety of methods to help me push through it. 
 

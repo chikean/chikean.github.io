@@ -3,24 +3,31 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+  {% for post in site.posts limit:1 %}
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
+  <div class="card w-75 my-4 mx-auto card-outline-primary">
+    <h3 class="card-header">Latest Blog Post</h3>
+    <div class="card-block">
+      <h4 class="card-title">{{ post.title | escape }}</h4>
+      <p class="card-text">{{ post.tagline | escape }}</p>
+      <p class="card-text"><small class="text-muted">Posted {{ post.date | date: date_format }}</small><a href="#" class="btn btn-primary float-right">View Post</a></p>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="row d-flex">
+    {% assign limit = site.posts | size | minus:1 %}
+    {% for i in (1..limit) %}
+    {% assign post = site.posts[i] %}
+    <div class="col-sm-4 p-2">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">{{ post.title | escape }}</h4>
+          <p class="card-text">{{ post.tagline | escape }}</p>
+          <p class="card-text"><small class="text-muted">Posted {{ post.date | date: date_format }}</small></p>
+        </div>
+      </div>
+    </div>
+    {% endfor %} 
+  </div>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
 </div>
