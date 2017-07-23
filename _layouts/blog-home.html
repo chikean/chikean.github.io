@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-
-<div class="home">
+<div class="container">
   {% for post in site.posts limit:1 %}
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
   <div class="card my-4 mx-auto">
-    <h3 class="card-header">Latest Blog Post</h3>
+    <h3 class="card-header">Latest</h3>
     <div class="card-block">
       <section class="jumbotron text-center blog-jumbotron">
         <div class="container">
@@ -18,20 +17,25 @@ layout: default
       </section>
     </div>
   </div>
-  {% endfor %}
-  <div class="row d-flex blog-row">
-    {% assign limit = site.posts | size | minus:1 %}
-    {% for i in (1..limit) %}
-    {% assign post = site.posts[i] %}
-    <div class="col-sm-4 p-2">
-      <div class="card">
-        <div class="card-block">
-          <h4 class="card-title">{{ post.title | escape }}</h4>
-          <p class="card-text">{{ post.tagline | escape }}</p>
-          <p class="card-text"><small class="text-muted">Posted {{ post.date | date: date_format }}</small><a href="{{ post.url | relative_url }}" class="btn btn-secondary float-right">View Post</a></p>
+   {% endfor %}
+</div>
+<div class="blog-row">
+  <div class="container">
+    <h3 class="text-center py-3">All</h3>
+    <div class="row d-flex ">
+      {% assign limit = site.posts | size | minus:1 %}
+      {% for i in (1..limit) %}
+      {% assign post = site.posts[i] %}
+      <div class="col-sm-4 p-2">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">{{ post.title | escape }}</h4>
+            <p class="card-text">{{ post.tagline | escape }}</p>
+            <p class="card-text"><small class="text-muted">Posted {{ post.date | date: date_format }}</small><a href="{{ post.url | relative_url }}" class="btn btn-secondary float-right">View Post</a></p>
+          </div>
         </div>
       </div>
+      {% endfor %} 
     </div>
-    {% endfor %} 
   </div>
 </div>

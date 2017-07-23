@@ -70,10 +70,7 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 0.5rem;
-  }
+
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
@@ -88,7 +85,10 @@ body {
 
 .front-img {
   opacity: 0.85;
-  -webkit-filter: blur(1px);
+  object-fit: cover; 
+  object-position: center; 
+  max-height: 50rem;
+  width: 100%;
 }
 
 .blog-jumbotron {
