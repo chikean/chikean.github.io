@@ -24,6 +24,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "chikean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chikean
 
+permalink: /:year/:month/:day/:title.html
+
 # Build settings
 markdown: kramdown
 gems:

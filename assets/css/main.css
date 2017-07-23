@@ -91,5 +91,34 @@ body {
   -webkit-filter: blur(1px);
 }
 
+.blog-jumbotron {
+  background-color: white;
+  padding: 0;
+}
 
+.blog-heading {
+  font-weight: 300;
+}
 
+.blog-row {
+  background-color: #f7f7f7;
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.post-content {
+  text-align: justify;
+}
+
+.post-meta {
+  font-size: 1rem;
+}
+
+.post-lead {
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 1rem 2rem;
+}
