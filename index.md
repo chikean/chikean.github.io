@@ -19,7 +19,10 @@ layout: default
             <ul class="list-group my-4 front-list">
                 {% for post in site.news reversed limit:3 %}
                 {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-                <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>{{ post.title | escape }}</li>
+                <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>
+                    <dt>{{ post.title | escape }}</dt>
+                    <dd>{{ post.description | escape }}</dd>
+                </li>
                 {% endfor %}
             </ul>
         </div>
