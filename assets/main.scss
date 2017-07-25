@@ -2,4 +2,77 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import '_bootstrap';
+@import "_bootstrap";
+
+.front-title {
+  font-family: $font-family-front-title;
+  font-size: 2rem;
+  color: $brand-primary;
+}
+
+.front-logo {
+    font-family: $font-family-front-title;
+    color: $brand-primary;
+}
+
+.front-subtitle {
+    font-size: 1.5rem;
+}
+
+.front-tagline{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    .front-title {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    .front-subtitle {
+        font-size: 2rem;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .front-title {
+        margin-top: 7.5rem;
+        font-size: 4rem;
+    }
+
+    .front-subtitle {
+        font-size: 3.5rem;
+    }
+
+    .front-tagline {
+        font-size: 1.25rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .front-title {
+        margin-top: 13rem;
+        font-size: 5rem;
+    }
+
+    .front-subtitle {
+        font-size: 4rem;
+    }
+
+    .front-tagline {
+        margin-top: 5rem;
+        font-size: 1.25rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .front-title {
+        margin-top: 15rem;
+    }
+
+    .front-tagline {
+        margin-top: 7rem;
+    }
+}
