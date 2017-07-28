@@ -117,3 +117,8 @@ body {
   width: 100%;
   padding: 1rem 2rem;
 }
+
+.thesis-tracker {
+  padding: 3.5rem 0;
+  background: #f7f7f7;
+}
