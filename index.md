@@ -17,7 +17,8 @@ layout: default
         <div class="col">
             <span class="text-center"><h4 class="text-primary">Recent News</h4></span>
             <ul class="list-group mt-4 front-list">
-                {% for post in site.news reversed limit:3 %}
+                {% assign test = (site.news | sort: 'date') | reverse ) %}
+                {% for post in test limit:3 %}
                 {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
                 <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>
                     <dt>{{ post.title | escape }}</dt>
