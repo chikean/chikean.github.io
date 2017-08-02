@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     (function blink() { 
-        $('.blink').fadeOut(500).fadeIn(500, blink); 
+        $('.blink').fadeOut(1000).fadeIn(1000, blink); 
     })();
 
     function createCookie(name, value, days) {
@@ -41,7 +41,11 @@ $( document ).ready(function() {
                 createCookie('thesis-count',sum,1);
                 $('#thesis-count').removeClass("blink");
                 $('#thesis-count').text(sum);
-		    }
+            },
+            error: function(data) {
+                $('#thesis-count').removeClass("blink");
+                $('#thesis-count').text("Failed to connect. Please try again later.");
+            }
         })
     }
 });
