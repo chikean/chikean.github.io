@@ -3,7 +3,7 @@ layout: post
 title:  Hello, World!
 date:   2016-12-15 19:28:01 +1000
 tagline: My un-exciting entrance into the blogging scene.
-categories: [research]
+categories: [research, web, project-management]
 ---
 I've always shrugged off blogging, thinking it was for people who had too much spare time. To me it seemed like such a waste of time and energy spent away from doing -- well, you know, <em>real work</em>.
 
