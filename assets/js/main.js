@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    (function blink() { 
+        $('.blink').fadeOut(500).fadeIn(500, blink); 
+    })();
+
     function createCookie(name, value, days) {
         var expires;
 
@@ -35,6 +39,7 @@ $( document ).ready(function() {
                     sum += data[obj].net;
                 };
                 createCookie('thesis-count',sum,1);
+                $('#thesis-count').removeClass("blink");
                 $('#thesis-count').text(sum);
 		    }
         })

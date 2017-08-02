@@ -39,5 +39,5 @@ layout: default
 </div>
 <div class="thesis-tracker text-center"> 
     <h1 class="display-4">Thesis Progress</h1>
-    <p class="mt-5" id="thesis-count">0</p>
+    <p class="mt-5 blink" id="thesis-count">Fetching...</p>
 </div>
