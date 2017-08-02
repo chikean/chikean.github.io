@@ -27,6 +27,7 @@ $( document ).ready(function() {
 
     var sum = readCookie('thesis-count');
     if (sum) {
+        $('#thesis-count').removeClass("blink");
         $('#thesis-count').text(sum);
     } else {
         $.ajax({
@@ -40,7 +41,7 @@ $( document ).ready(function() {
                 };
                 createCookie('thesis-count',sum,1);
                 $('#thesis-count').removeClass("blink");
-                $('#thesis-count').text(sum);
+                setTimeout($('#thesis-count').text(sum), 1000);
             },
             error: function(data) {
                 $('#thesis-count').removeClass("blink");
