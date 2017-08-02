@@ -41,7 +41,7 @@ $( document ).ready(function() {
                 };
                 createCookie('thesis-count',sum,1);
                 $('#thesis-count').removeClass("blink");
-                setTimeout($('#thesis-count').text(sum), 1000);
+                $('#thesis-count').text(sum);
             },
             error: function(data) {
                 $('#thesis-count').removeClass("blink");
