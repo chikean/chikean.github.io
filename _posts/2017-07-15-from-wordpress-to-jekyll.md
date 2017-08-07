@@ -3,7 +3,7 @@ layout: post
 title:  "From WordPress.com to Jekyll (with Docker)"
 date:   2017-07-15 19:28:01 +1000
 tagline: 'Breaking free of the WP chains with Jekyll and a Dockerized development environment.'
-categories: [web, project-management, docker]
+categories: [web, project-management, docker, software-dev, phd]
 ---
 I initially started this blog on [WordPress](https://wordpress.com/) (the official hosted one -- not a self-hosted instance). I had a need for a personal website very quickly for a scholarship application, and as a site on WordPress is incredibly quick and easy to set up, that was my go-to. 
 
@@ -42,8 +42,8 @@ And that's it! I'm up and running with a Jekyll dev environment, and I can push 
 Constantly typing that long docker command to launch a container to run my Jekyll development environment can be exhausting. Remembering the flags and the right folders might pose a challenge in the future, so we can create an alias to speed things up. As my host runs Windows, we can do this in PowerShell:
 
 ```
-echo function function1 {docker run --rm -p 4000:4000 -v /folder/on/host:/srv/jekyll jekyll/jekyll jekyll serve} >> $profile
-echo Set-Alias serve-blog function1 >> $profile
+echo "function function1 {docker run --rm -p 4000:4000 -v /folder/on/host:/srv/jekyll jekyll/jekyll jekyll serve}" >> $profile
+echo "Set-Alias serve-blog function1" >> $profile
 ```
 
 These two commands append first a function with the docker command, with the name `function1`, and second an alias `serve-blog` which is an alias for the function. As such, when I want to run a container of my Jekyll development environment, I simply need to enter `serve-blog` in a PowerShell console and my files within `/folder/on/host` will be up and running at `localhost:4000`. Note that it may require a restart of PowerShell to apply. 
