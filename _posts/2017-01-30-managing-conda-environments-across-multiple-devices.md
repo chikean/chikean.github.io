@@ -26,7 +26,7 @@ conda env create -f environment.yml
 If I want to then update any packages, I can do so on one machine (using `conda update --all` within the activated environment, for example), and then re-export the `.yml` file to my cloud storage. Unfortunately there's no way that I know of to make all of my other devices update their environments when this file changes without setting up a custom cron job, meaning that I still need to remember to update the other environments using the file:
 
 ```
-conda env update -f environment.yml
+conda env update -f environment.yml --force
 ```
 
 Now my work suffers one less barrier. And to think -- all I had to do was read the documentation!
