@@ -1,66 +1,62 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-<div class="container-fluid">
-      <div class="row">
-          <nav class="col-sm-4 col-md-3 d-none d-sm-block sidebar bg-primary" id="sidebar">
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home"><span class="sr-only">(current)</span>
-                <span class="d-none d-lg-block">
-          <div class="w-100">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ "/assets/img/myAvatar.svg" | relative_url }} " alt="">
-          </div>
-        </span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interests">Interests</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#community">Community</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#awards">Awards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publications">Publications</a>
-              </li>
-            </ul>
-          </nav>
-        <main class="col-sm-8 offset-sm-4 col-md-9 offset-md-3">
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="home">
-            <div class="my-auto">
-              <h1 class="display-2 text-uppercase">Chris Chow</h1>
-              <p class="lead">Researcher, developer, data scientist, communicator.</p>
-            </div>
-          </section>
-          {% assign sorted = site.resume | sort: 'order' %}
-          {% for item in sorted %}
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="{{ item.title | escape | downcase }}">
-            <div class="my-auto">
-              <h1 class="display-4 text-uppercase">{{ item.title | escape }}</h1>
-              {{ item.content }}
-            </div>
-          </section>
-          {% endfor %}
-        </main>
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 class="display-3">{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
+  </div> <!-- /container -->
+    <div class="container mb-5">   
+        <div class="row marketing">
+            <div class="col-sm-6">
+                <span class="text-center"><h4 class="text-primary">Recent News</h4></span>
+                <ul class="list-group mt-4 front-list">
+                    {% assign test = (site.news | sort: 'date') | reverse ) %}
+                    {% for post in test limit:3 %}
+                    {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
+                    <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>
+                        <dt>{{ post.title | escape }}</dt>
+                        <dd>{{ post.description | escape }}</dd>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <span class="text-center"><h4 class="text-primary">Latest Blog Posts</h4></span>
+                <div class="list-group mt-4 front-list">
+                    {% for post in site.posts limit:3 %}
+                    {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
+                    <a class="list-group-item list-group-item-action" href="{{ post.url | relative_url }}"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>{{ post.title | escape }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
