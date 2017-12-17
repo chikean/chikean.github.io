@@ -4,41 +4,63 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-<div class="card text-center">
-  <img class="card-img img-fluid front-img" src="{{ "/assets/img/cover.jpg" | relative_url }}" alt="Card image">
-  <div class="card-img-overlay">
-    <h1 class="card-title front-title">{{ site.title | escape }}</h1>
-    <h2 class="display-4 front-subtitle">{{ site.subtitle | escape }}</h2>
-    <p class="card-text lead front-tagline">{{ site.description | escape }}</p>
-  </div>
-</div>
-<div class="container">   
-    <div class="row marketing">
-        <div class="col">
-            <span class="text-center"><h4 class="text-primary">Recent News</h4></span>
-            <ul class="list-group mt-4 front-list">
-                {% assign test = (site.news | sort: 'date') | reverse ) %}
-                {% for post in test limit:3 %}
-                {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-                <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>
-                    <dt>{{ post.title | escape }}</dt>
-                    <dd>{{ post.description | escape }}</dd>
-                </li>
-                {% endfor %}
+<div class="container-fluid">
+      <div class="row">
+          <nav class="col-sm-4 col-md-3 d-none d-sm-block sidebar bg-primary" id="sidebar">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home"><span class="sr-only">(current)</span>
+                <span class="d-none d-lg-block">
+          <div class="w-100">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ "/assets/img/myAvatar.svg" | relative_url }} " alt="">
+          </div>
+        </span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interests">Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#awards">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
             </ul>
-        </div>
-        <div class="col">
-            <span class="text-center"><h4 class="text-primary">Latest Blog Posts</h4></span>
-            <div class="list-group mt-4 front-list">
-                {% for post in site.posts limit:3 %}
-                {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-                <a class="list-group-item list-group-item-action" href="{{ post.url | relative_url }}"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>{{ post.title | escape }}</a>
-                {% endfor %}
+          </nav>
+        <main class="col-sm-8 offset-sm-4 col-md-9 offset-md-3">
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="home">
+            <div class="my-auto">
+              <h1 class="display-2 text-uppercase">Chris Chow</h1>
+              <p class="lead">Researcher, developer, data scientist, communicator.</p>
             </div>
-        </div>
+          </section>
+          {% assign sorted = site.resume | sort: 'order' %}
+          {% for item in sorted %}
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="{{ item.title | escape | downcase }}">
+            <div class="my-auto">
+              <h1 class="display-4 text-uppercase">{{ item.title | escape }}</h1>
+              {{ item.content }}
+            </div>
+          </section>
+          {% endfor %}
+        </main>
+      </div>
     </div>
-</div>
-<div class="thesis-tracker text-center"> 
-    <h1 class="display-4">Thesis Progress</h1>
-    <p class="mt-5 blink" id="thesis-count">Fetching...</p>
-</div>

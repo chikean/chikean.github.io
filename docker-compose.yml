@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  jekyll:
+    build: .
+    image: chikean/jekyll-bootstrap4
+    ports:
+      - "4001:4000"
+    volumes:
+      - .:/srv/jekyll
+    command: ["jekyll", "serve", "--force_polling"]

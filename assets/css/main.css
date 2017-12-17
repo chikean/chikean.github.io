@@ -1,94 +1,52 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* .nav-trigger-label {
-    display: inline;
-} */
-
-/* Space out content a bit */
-body {
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-/* Custom page header */
-.header {
-  padding-bottom: 0.5rem;
-  border-bottom: .05rem solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
-}
-
-/* Customize container */
-.container-narrow > hr {
-  margin: 2rem 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+.sidebar {
   text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-  margin-bottom: 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15vh;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 2.5rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
+body {
+  position: relative;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.display-2, .display-4 {
+  font-weight: 600;
+  font-family: 'Montserrat'; 
 }
 
-.front-list > li, .front-list > a {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+.display-4 {
+  font-size: 2rem;
 }
 
-.front-img {
-  opacity: 0.85;
-  object-fit: cover; 
-  object-position: center; 
-  max-height: 50rem;
-  width: 100%;
+.nav-link {
+  color: white;
+}
+
+a.nav-link.active { font-weight: bold !important;}
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important; 
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none; }
+
+.img-profile {
+  background: white;
+  height: 150px;
 }
 
 .blog-jumbotron {
@@ -100,33 +58,23 @@ body {
   font-weight: 300;
 }
 
-.blog-row {
+#blog-posts {
   background-color: #f7f7f7;
 }
 
-.post-content {
-  text-align: justify;
-}
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh; }
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem; } }
 
-.post-meta {
-  font-size: 1rem;
-}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important; } }
 
-.post-lead {
-  background-color: #f7f7f7;
-  width: 100%;
-  padding: 1rem 2rem;
-}
-
-.thesis-tracker {
-  padding: 3.5rem 0;
-  background: #f7f7f7;
-}
-
-pre {
-    padding: 1rem;
-    font-size: 90%;
-    color: #bd4147;
-    background-color: #f7f7f9;
-    border-radius: 0.25rem;
+@media (min-width: 576px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
 }
