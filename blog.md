@@ -14,7 +14,7 @@ permalink: /blog
           <div class="container">
             <h1 class="jumbotron-heading blog-heading">{{ post.title | escape }}</h1>
             <p class="lead text-muted">{{ post.tagline | escape }}</p>
-            <p><a href="{{ post.url | relative_url }}" class="btn btn-secondary">View Post</a></p>
+            <p><a href="{{ post.url | relative_url }}" class="btn btn-primary">View Post</a></p>
             <p class="card-text"><small class="text-muted">Posted {{ post.date | date: date_format }}</small></p>
           </div>
         </section>

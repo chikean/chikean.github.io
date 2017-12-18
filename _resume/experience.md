@@ -2,7 +2,7 @@
 title: Experience
 order: 2
 ---
-{:.float-right.lead.text-primary}
+{:.float-right.lead.text-primary.font-weight-bold}
 2012 - now
 
 {:.text-uppercase}
@@ -46,7 +46,7 @@ Donec ultricies quam vitae odio facilisis congue. Nunc convallis ex non gravida 
 
 <br>
 
-{:.float-right.lead.text-primary}
+{:.float-right.lead.text-primary.font-weight-bold}
 2015 - now
 
 {:.text-uppercase}
@@ -72,7 +72,7 @@ Donec ultricies quam vitae odio facilisis congue. Nunc convallis ex non gravida 
 
 <br>
 
-{:.float-right.lead.text-primary}
+{:.float-right.lead.text-primary.font-weight-bold}
 2016
 
 {:.text-uppercase}
@@ -86,7 +86,7 @@ Donec ultricies quam vitae odio facilisis congue. Nunc convallis ex non gravida 
 
 <br>
 
-{:.float-right.lead.text-primary}
+{:.float-right.lead.text-primary.font-weight-bold}
 2010 - 2011
 
 {:.text-uppercase}

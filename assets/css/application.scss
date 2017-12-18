@@ -1,0 +1,98 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Bootstrap 4 Variable Overrides
+
+$theme-colors: (
+  "primary": #336699,
+);
+
+// Import Bootstrap 4 Beta
+@import "bootstrap";
+
+// Custom Styles Below
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .sidebar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15vh;
+  }
+  
+  body {
+    position: relative;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  }
+  
+  .display-2, .display-4 {
+    font-weight: 600;
+    font-family: 'Montserrat'; 
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  a.nav-link.active { font-weight: bold !important;}
+  
+  section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important; 
+  }
+  
+  section.resume-section .resume-item .resume-date {
+      min-width: none; }
+  
+  .img-profile {
+    background: white;
+    height: 150px;
+  }
+  
+  .blog-jumbotron {
+    background-color: white;
+    padding: 0;
+  }
+  
+  .blog-heading {
+    font-weight: 300;
+  }
+  
+  #blog-posts {
+    background-color: #f7f7f7;
+  }
+  
+  @media (min-width: 768px) {
+    section.resume-section {
+      min-height: 100vh; }
+      section.resume-section .resume-item .resume-date {
+        min-width: 18rem; } }
+  
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important; } }
+  
+  @media (min-width: 576px) {
+    .display-4 {
+      font-size: 3.5rem;
+    }
+  }
+
+  svg:hover {
+    color: #336699;
+  }
