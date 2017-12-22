@@ -3,8 +3,10 @@
 ---
 // Bootstrap 4 Variable Overrides
 
+$primary: #336699;
+
 $theme-colors: (
-  "primary": #336699,
+  "primary": $primary,
 );
 
 $headings-font-family: 'Montserrat';
@@ -98,3 +100,66 @@ html {
   svg:hover {
     color: #336699;
   }
+
+  .back-to-top-fixed {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: lightgray; /* Set a background color */
+    color: $primary; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .project-cover {
+    padding: 0;
+  }
+
+  .dark-wrap {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background: #000000;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+  }
+
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.project-cover:hover .caption {
+  opacity: 1;
+}
+
+.project-cover:hover .dark-wrap {
+  opacity: 0.6;
+}
+
+.main-splash {
+  // background: url('/assets/img/test-4.gif') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+.inner-wrap {
+  display: table;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

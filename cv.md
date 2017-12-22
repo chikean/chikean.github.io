@@ -28,6 +28,14 @@ permalink: /cv
             <div class="my-auto">
               <h1 class="display-2 text-uppercase">{{ site.title }}</h1>
               <p class="lead">{{ site.description }}</p>
+              <ul class="mt-5 list-inline">
+                <li class="list-inline-item mr-3">
+                  <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github fa-3x"></i></a>
+                </li>
+                <li class="list-inline-item mr-3">
+                  <a href="https://linked.in/in/{{ site.linkedin_username }}"><i class="fab fa-linkedin fa-3x"></i></a>
+                </li>
+              </ul>
             </div>
           </section>
           {% for item in sorted %}

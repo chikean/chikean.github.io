@@ -15,7 +15,7 @@ I also have experience using Matlab, R and SPSS.
 
 I have used deep learning frameworks, NVIDIA's DIGITs. I predominantly use Keras, but have dabbled in Tensorflow, Microsoft's Cognitive Toolkit and Theano directly.
 
-<hr class="w-50">
+<hr class="w-50 ml-auto">
 
 {:.float-right.list-inline.mb-0}
 * {:.list-inline-item}<i class="fab fa-html5 fa-2x"></i>
@@ -25,6 +25,7 @@ I have used deep learning frameworks, NVIDIA's DIGITs. I predominantly use Keras
 * {:.list-inline-item}<i class="fab fa-node-js fa-2x"></i>
 * {:.list-inline-item}<i class="fab fa-wordpress fa-2x"></i>
 * {:.list-inline-item}<i class="fab fa-drupal fa-2x"></i>
+* {:.list-inline-item}<i class="fab fa-font-awesome fa-2x"></i>
 
 {:.text-uppercase.text-primary}
 ## Web Development
@@ -35,7 +36,7 @@ I have experience using AJAX, interacting with backend databases, RESTful APIs, 
 
 I am comfortable with Linux CLI, have configured Apache and NGINX before, and have experience setting up HTTPS.
 
-<hr class="w-50">
+<hr class="w-50 ml-auto">
 
 {:.float-right.list-inline.mb-0}
 * {:.list-inline-item}<i class="fab fa-trello fa-2x"></i>
@@ -51,7 +52,7 @@ I use Trello for project management, and have experience using the Atlassian sta
 
 I use git for version control, but have also used SVN previously. I have experience using Docker.
 
-<hr class="w-50">
+<hr class="w-50 ml-auto">
 
 {:.text-uppercase.text-primary}
 ## Research and Teaching

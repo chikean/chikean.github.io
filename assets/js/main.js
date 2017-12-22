@@ -25,6 +25,14 @@ $( document ).ready(function() {
     //     return null;
     // }
 
+    $(document).scroll(function() {
+        if ($(document).scrollTop() > 0) {
+            $('.back-to-top-fixed').removeClass('invisible');
+        } else {
+            $('.back-to-top-fixed').addClass('invisible');
+        };
+    })
+
     var margin = {top: 20, right: 20, bottom: 30, left: 50}, 
         width = 600 - margin.left - margin.right, 
         height = 400 - margin.top - margin.bottom;
