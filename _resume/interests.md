@@ -1,6 +1,6 @@
 ---
 title: Interests
-order: 6
+order: 5
 ---
 I am an avid traveller and love to experience what the world has to offer. I love to learn, and subscribe to a wide range of tech and design podcasts. 
 

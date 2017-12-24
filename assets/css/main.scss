@@ -151,15 +151,26 @@ html {
 .main-splash {
   // background: url('/assets/img/test-4.gif') no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   opacity: 0.8;
 }
 
 .inner-wrap {
   display: table;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#down-button {
+  position: absolute;
+  left: 49%;
+  bottom: 5%;
+}
+
+.p-splash {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }

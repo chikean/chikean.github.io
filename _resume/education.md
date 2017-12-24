@@ -12,11 +12,10 @@ order: 3
 The Australian National University  
 
 Computer Science  
-*Deep Learning for Implicit Topic Relevance*  
+*Deep Learning for Implicit Topic Relevance*
 
-<br>
+{:.text-uppercase.text-primary.mt-5}
 
-{:.text-uppercase.text-primary}
 ## Bachelor of Information Technology (First Class Honours)
 
 {:.float-right.lead}
@@ -26,11 +25,10 @@ Computer Science
 The Australian National University  
 
 Information Systems  
-*Predicting security content from reader's reactions*  
+*Predicting security content from reader's reactions*
 
-<br>
+{:.text-uppercase.text-primary.mt-5}
 
-{:.text-uppercase.text-primary}
 ## Bachelor of Science (Advanced)
 
 {:.float-right.lead}
@@ -39,4 +37,4 @@ Information Systems
 {:.lead}
 The University of Sydney  
 
-Psychology and Neuroscience  
+Psychology and Neuroscience

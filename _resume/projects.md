@@ -1,6 +1,5 @@
 ---
-title: Projects
-order: 5
+
 ---
 <div class="row">
     <div class="col-sm-4 col-lg-3 mb-3">

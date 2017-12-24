@@ -11,6 +11,7 @@
 /tmp/
 _site/
 Gemfile.lock
+/.vscode/
 
 ## Specific to RubyMotion:
 .dat*
@@ -98,3 +99,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+.vscode/settings.json
