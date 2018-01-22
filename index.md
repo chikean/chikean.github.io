@@ -6,14 +6,23 @@ layout: default
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron main-splash">
   </div>
-    <div class="inner-wrap">
-      <div class="container-fluid">
-        <h1 class="display-1 text-white">{{ site.title }}.</h1>
-        <p class="lead text-white text-right">{{ site.description }}</p>
+  <div class="inner-wrap">
+    <div class="container">
+      <h1 class="display-1 text-white">{{ site.title }}.</h1>
+      <p class="lead text-white text-right tagline">{{ site.description }}</p>
     </div>
+  </div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm">
+        <p class="lead about">I am a technologist all-rounder with applied experiences across many aspects of computer science. I am suitable for a variety of roles due to my strong sense of purpose and direction, and my ability to adapt and quickly master new skills. My passion for technology has led me to frequently participate in outreach, teaching and community engagement.</p>
+      </div>
+      <div class="col-sm">
+        <p class="lead about">Currently I am a cyber security analyst, but have a background in web development, machine learning, and human-computer interaction. I am in the final stages of my PhD in computer science, in which I research the use of deep learning models to infer cognitive relevance assessments. I'm seeking opportunities that will challenge me and allow me to continue exploring my passions.</p>
+      </div>
     </div>
-
-  <div class="container mb-5" id="intro">
+  </div>
+  <div class="container py-5 border-top" id="intro">
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-sm-4">

@@ -33,7 +33,7 @@ html {
     padding-top: 15vh;
   }
   
-  .lead {
+  .tagline {
     margin-top: 15vh;
   }
   
@@ -130,8 +130,9 @@ html {
   // background: url('/assets/img/test-4.gif') no-repeat;
   background-size: cover;
   height: 100vh;
-  opacity: 0.8;
-  background-color: black;
+  background-color: #5c595a;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 .inner-wrap {
