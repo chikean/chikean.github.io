@@ -13,26 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-name: Chris Chow
-author: Christopher Chow
-title: Doctor Chow's
-subtitle: Research Blog
-email: christopher.chow@anu.edu.au
-description: > # this means to ignore newlines until "baseurl:"
-  Research notes and unpopular opinions from a PhD candidate.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "chikean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+title: Christopher Chow
+description: >- # this means to ignore newlines until "baseurl:"
+  Canberra based communicator, researcher and developer.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://chrischow.me" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chikean
-
-permalink: /:year/:month/:day/:title.html
+linkedin_username: chris-chow
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 
-collections:
-  - news
+sass:
+  sass_dir: _sass/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

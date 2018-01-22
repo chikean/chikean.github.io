@@ -1,33 +1,39 @@
-<footer class="footer">
-  <div class="container">
+<footer class="container">
     <div class="row">
-      <div class="col text-left">
-        <address>
-          {% if site.author %}
-            {{ site.author | escape }}
-          {% else %}
-            {{ site.title | escape }}
-          {% endif %}
-          {% if site.email %}
-          <br><a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          {% endif %}
-        </address>
+      <div class="col-md-6">
+        <ul class="contact-list">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+        </ul>
       </div>
-      <div class="col text-center">
-        <ul class="list-unstyled">
+
+      <div class="col-md-6">
+        <ul class="social-media-list">
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
+
+          {% if site.twitter_username %}
           <li>
-            <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+            {% include icon-twitter.html username=site.twitter_username %}
           </li>
+          {% endif %}
         </ul>
       </div>
-      <div class="col text-right">
-        <p>{{ site.description | escape }}</p>
+
+      <div class="col-md-12">
+        <p>Copyright (c) Chris Chow 2017</p>
       </div>
     </div>
-  </div>
+
 </footer>

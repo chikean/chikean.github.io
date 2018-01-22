@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}"> <!--<![endif]-->
     {% include head.html %}
 
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <body data-spy="scroll" data-target="#sidebar" data-offset="10">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <!-- <div class="container"> -->
-            {% include header.html %}
-            {{ content }}
-            {% include footer.html %}
-        <!-- </div> -->
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="{{ "/assets/js/vendor/tether.min.js" | relative_url }}"></script>
-        <script src="{{ "/assets/js/vendor/bootstrap.min.js" | relative_url }}"></script>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script src="{{ "/assets/js/main.js" | relative_url}}"></script>
 
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-102873590-2','auto');ga('send','pageview');
-        </script>
+        <!-- Add your site or application content here -->
+        {{ content }}
+        <a class="back-to-top-fixed d-none d-sm-block invisible" href="#">
+            <i class="far fa-arrow-to-top"></i>
+          </a>
+
+        <script src="{{ "/assets/js/vendor/modernizr-3.5.0.min.js" | relative_url }}"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-3.2.1.min.js" | relative_url }}"><\/script>')</script>
+        <script src="{{ "/assets/js/plugins.js" | relative_url}}"></script>
+        <script src="{{ "/assets/js/main.js" | relative_url}}"></script>
+        <script src="{{ "/assets/js/vendor/fontawesome-all.js" | relative_url}}"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+        <!-- Bootstrap 4 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        {% if jekyll.environment == 'production' and site.google_analytics %}
+        {% include google-analytics.html %}
+        {% endif %}
   </body>
 
 </html>
