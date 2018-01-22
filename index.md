@@ -4,13 +4,12 @@ layout: default
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron main-splash bg-primary">
+  <div class="jumbotron main-splash">
   </div>
     <div class="inner-wrap">
-      <div class="container text-center align-middle" style="display: table-cell">
-      <h1 class="display-2 text-uppercase text-white">{{ site.title }}</h1>
-      <!-- <p class="lead font-weight-bold">{{ site.description }}</p> -->
-      <p><a id="down-button" href="#intro" role="button"><i class="far fa-arrow-to-bottom text-white fa-2x"></i></a></p>
+      <div class="container">
+        <h1 class="display-1">{{ site.title }}.</h1>
+        <p class="lead font-weight-bold">{{ site.description }}</p>
     </div>
     </div>
 
@@ -46,34 +45,8 @@ layout: default
   <div class="container-fluid text-center bg-light my-5 text-white p-splash">
     <a href="{{ '/portfolio/' | relative_url }}" role="button"><h4 class="display-4">View Portfolio<i class="far fa-chevron-double-right ml-2"></i></h4></a>
   </div>
-    <div class="container mb-5">   
-        <div class="row marketing">
-            <div class="col-sm-6">
-                <h4 class="text-primary text-uppercase text-center">Recent News</h4>
-                <ul class="list-group mt-4 front-list">
-                    {% assign test = site.news | sort: 'date' | reverse %}
-                    {% for post in test limit:3 %}
-                    {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-                    <li class="list-group-item"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>
-                        <dt>{{ post.title | escape }}</dt>
-                        <dd>{{ post.description | escape }}</dd>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-sm-6">
-                <h4 class="text-primary text-uppercase text-center">Latest Blog Posts</h4>
-                <div class="list-group mt-4 front-list">
-                    {% for post in site.posts limit:3 %}
-                    {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
-                    <a class="list-group-item list-group-item-action" href="{{ post.url | relative_url }}"><small class="text-muted mr-2">{{ post.date | date: date_format }}</small>{{ post.title | escape }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container mb-5 text-center">
-      <h2 class="text-primary text-uppercase">Contact</h2>
+      <h2 class="text-primary text-uppercase">Socials</h2>
       <p>Canberra, Australia</p>
       <p>christopher.chow@anu.edu.au</p>
       <ul class="my-3 list-inline">

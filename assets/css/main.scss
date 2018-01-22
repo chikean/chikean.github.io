@@ -38,7 +38,7 @@ html {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   }
   
-  .display-2, .display-4 {
+  .display-1, .display-2, .display-4 {
     font-weight: 600;
     font-family: 'Montserrat'; 
   }
@@ -151,16 +151,15 @@ html {
 .main-splash {
   // background: url('/assets/img/test-4.gif') no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   opacity: 0.8;
 }
 
 .inner-wrap {
-  display: table;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 30vh;
   left: 0;
 }
 
@@ -173,4 +172,9 @@ html {
 .p-splash {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.title {
+  font-size: 10rem;
+  line-height: 0.92;
 }
