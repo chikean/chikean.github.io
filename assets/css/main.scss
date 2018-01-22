@@ -33,9 +33,17 @@ html {
     padding-top: 15vh;
   }
   
+  .lead {
+    margin-top: 15vh;
+  }
+  
   body {
     position: relative;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  }
+
+  .display-1 {
+    font-size: 3rem;
   }
   
   .display-1, .display-2, .display-4 {
@@ -65,36 +73,6 @@ html {
   .img-profile {
     background: white;
     height: 150px;
-  }
-  
-  .blog-jumbotron {
-    background-color: white;
-    padding: 0;
-  }
-  
-  .blog-heading {
-    font-weight: 300;
-  }
-  
-  #blog-posts {
-    background-color: #f7f7f7;
-  }
-  
-  @media (min-width: 768px) {
-    section.resume-section {
-      min-height: 100vh; }
-      section.resume-section .resume-item .resume-date {
-        min-width: 18rem; } }
-  
-  @media (min-width: 992px) {
-    section.resume-section {
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important; } }
-  
-  @media (min-width: 576px) {
-    .display-4 {
-      font-size: 3.5rem;
-    }
   }
 
   svg:hover {
@@ -153,6 +131,7 @@ html {
   background-size: cover;
   height: 100vh;
   opacity: 0.8;
+  background-color: black;
 }
 
 .inner-wrap {
@@ -161,6 +140,7 @@ html {
   position: absolute;
   top: 30vh;
   left: 0;
+  padding: 0;
 }
 
 #down-button {
@@ -177,4 +157,35 @@ html {
 .title {
   font-size: 10rem;
   line-height: 0.92;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh; }
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem; } }
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important; } }
+
+@media (min-width: 576px) {
+
+  .inner-wrap {
+    padding: 0 3rem;
+  }
+
+  .display-1 {
+    font-size: 8.5rem;
+    line-height: 0.9;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+
+  .display-4 {
+    font-size: 3.5rem;
+  }
 }

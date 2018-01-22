@@ -7,9 +7,9 @@ layout: default
   <div class="jumbotron main-splash">
   </div>
     <div class="inner-wrap">
-      <div class="container">
-        <h1 class="display-1">{{ site.title }}.</h1>
-        <p class="lead font-weight-bold">{{ site.description }}</p>
+      <div class="container-fluid">
+        <h1 class="display-1 text-white">{{ site.title }}.</h1>
+        <p class="lead text-white text-right">{{ site.description }}</p>
     </div>
     </div>
 
@@ -42,11 +42,7 @@ layout: default
       </div>
     </div>
   </div> <!-- /container -->
-  <div class="container-fluid text-center bg-light my-5 text-white p-splash">
-    <a href="{{ '/portfolio/' | relative_url }}" role="button"><h4 class="display-4">View Portfolio<i class="far fa-chevron-double-right ml-2"></i></h4></a>
-  </div>
-    <div class="container mb-5 text-center">
-      <h2 class="text-primary text-uppercase">Socials</h2>
+    <div class="container mb-5 text-center border-top">
       <p>Canberra, Australia</p>
       <p>christopher.chow@anu.edu.au</p>
       <ul class="my-3 list-inline">

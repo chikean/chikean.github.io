@@ -26,13 +26,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path
-  resume:
-    output: false
-
 sass:
   sass_dir: _sass/
 
