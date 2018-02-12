@@ -27,7 +27,7 @@ layout: default
     <div class="row">
       <div class="col-sm-4">
         <h2 class="text-primary text-uppercase text-center my-2">Researcher</h2>
-        <img class="img-fluid" src="https://chrischowme.files.wordpress.com/2017/01/research.jpg" alt="">
+        <img class="img-fluid" src="{{ '/assets/img/research.jpg' | absolute_url }}" alt="">
         <p>I am currently a PhD Student within the Research School of Computer Science at the Australian National University.</p>
         <p>My research involves using physiological signals and deep learning models to predict topical relevance and interest in high-pressure environments.</p>
         <p>Ultimately, the goals for my research will be to improve user performance and experience while under stress or uncertainty. I plan to do this by maximising the availability and potential of biometrics in an ethical and privacy-preserving way.</p>
@@ -35,7 +35,7 @@ layout: default
       </div>
       <div class="col-sm-4">
         <h2 class="text-primary text-uppercase text-center my-2">Communicator</h2>
-        <img class="img-fluid" src="https://chrischowme.files.wordpress.com/2017/01/outreach.jpg" alt="">
+        <img class="img-fluid" src="{{ '/assets/img/outreach.jpg' | absolute_url }}" alt="">
         <p>I am a strong communicator who is passionate about encouraging students to pursue science, technology, engineering and math (STEM).</p>
         <p>I frequently participate in ICT outreach events in the Canberra community, and collaborate with the ANU College of Engineering and Computer Science.</p>
         <p>I have significant experience communicating with government and industry partners on cyber security matters.</p>
@@ -43,7 +43,7 @@ layout: default
       </div>
       <div class="col-sm-4">
         <h2 class="text-primary text-uppercase text-center my-2">Developer</h2>
-        <img class="img-fluid" src="https://chrischowme.files.wordpress.com/2017/01/code2.jpg" alt="">
+        <img class="img-fluid" src="{{ '/assets/img/code.jpg' | absolute_url }}" alt="">
         <p>I am a part-time full stack web developer. I love building pretty things and using web technologies to convey ideas and stories.</p>
         <p>I have built several custom web applications for ANU, including experimental platforms for my own research.</p>
         <p>Ask me about Python, JavaScript, PHP, Django, Flask, Postgres, Celery or Docker.</p>
