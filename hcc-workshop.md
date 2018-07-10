@@ -58,9 +58,9 @@ The workshop covered a range of broad computer science topics, but also allowed 
 
 ## Outcomes
 
-![NPU Visit](assets/img/hcc-6.jpg){: width="33%"}
-![NPU Visit](assets/img/hcc-7.jpg){: width="33%"}
-![NPU Visit](assets/img/hcc-8.jpg){: width="33%"}
+![NYSF](assets/img/hcc-6.JPG){: width="33%"}
+![NYSF](assets/img/hcc-7.JPG){: width="33%"}
+![NYSF](assets/img/hcc-8.JPG){: width="33%"}
 
 The HCC Workshop has been a popular activity for students visiting ANU's College of Engineering and Computer Science (CECS) for over three years. Over 300 students have participated in the workshop, with many participants later enrolling in STEM programs at ANU. The HCC Workshop has been well received by ANU academics and professional staff, as well as the large number of students, teachers, and volunteers that have participated. While the HCC Workshop was initially run on-campus at ANU, it's success meant that it quickly expanded to in-school programs across the ACT, Australia, and has even been held overseas.
 
