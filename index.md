@@ -52,7 +52,7 @@ layout: default
     </div>
   </div> <!-- /container -->
     <div class="container mb-5 text-center border-top">
-      <p>Canberra, Australia</p>
+      <p>Sydney, Australia</p>
       <p>christopher.chow@anu.edu.au</p>
       <ul class="my-3 list-inline">
         <li class="list-inline-item mr-3">
