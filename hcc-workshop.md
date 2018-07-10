@@ -46,9 +46,9 @@ The workshop covered a range of broad computer science topics, but also allowed 
 
 ## Development Process
 
-![NPU Visit](assets/img/HCCworkshop_start.png){: width="33%"}
-![NPU Visit](assets/img/hcc-5.jpg){: width="33%"}
-![NPU Visit](assets/img/hcc-4.jpg){: width="33%"}
+![HCC Workshop Landing Page](assets/img/HCCworkshop_start.png){: width="33%"}
+![NYSF](assets/img/hcc-5.JPG){: width="33%"}
+![NYSF](assets/img/hcc-4.JPG){: width="33%"}
 
 1. We met with and interviewed senior stakeholders in the project to brainstorm ideas. We spoke to academics from the ANU Human Computer Interaction research group to find out what activities they previously run, as well as their own ideas on how to effectively promote their research. We also engaged with the ANU CECS Marketing team directly to elicit finer details on intended audience, scope, and future intentions.
 2. We developed a design proposal and commissioned an Honours student to develop a prototype using Flask. We worked with the developer to shape requirements, test the prototype and develop additional functionality. We presented the prototype to our stakeholders for further feedback.
