@@ -10,6 +10,7 @@ The HCC Workshop is a collection of hands-on activities that demonstrate the res
 In the HCC Workshop, students will be able to play with some of the latest technology that we use in our research, such as having their eye gaze tracked. Students will have the opportunity to play games and have fun learning about leading research in an exciting blend of different fields such as computing, art, science, music, cyber security, psychology, social network analysis, digital humanities and biologically inspired computing.
 
 ## Problem Brief and Solution
+{: .mt-5}
 
 The ANU College of Engineering and Computer Science (CECS) were seeking a refresh of engaging workshops and activities for outreach, engagement and marketing. The design brief asked for engaging challenges that promoted computer science and the world-leading research efforts of ANU to primary and high school students, particularly those with no previous technical backgrounds. ANU CECS sought to encourage potential students to study STEM (science, technology, engineering and mathematics), however a primary barrier was convincing time-poor academics to develop and run ad-hoc activities several times a year. ANU CECS wanted a long-term solution that reduced these barriers and provided a flexible and engaging outreach experience for students.
 
@@ -32,23 +33,21 @@ The workshop covered a range of broad computer science topics, but also allowed 
 ![HCC Workshop Screens](assets/img/screen-4.PNG){: width="49%"}
 
 ## Role and team
+{: .mt-5}
 
 <div class="row">
+    <div class="col-4">
+    <img src="assets/img/hcc-2.jpg" class="img-fluid">
+    </div>
     <div class="col-8">
         <p>I initially served as the primary technical and application developer working alongside lead content creator <a href="http://leanacopeland.com">Leana Copeland</a>. Before Leana's departure in 2016, I managed provisioning of development and production environments, core workshop application framework development, and the realisation of content ideas into technical solutions.</p>
         <p>I have since taken over as project lead to become the main point of contact for the HCC Workshop. I personally maintain all infrastructure and code, work with stakeholders to guide the strategy, content and direction of the workshop, and serve as the primary workshop facilitator whenever the HCC Workshop is held. I have mentored other students to contribute towards development or workshop facilitation.</p>
         <p>Primary stakeholders that we communicated with included academic staff from ANU, the ANU CECS Marketing team, teachers, and organising committees from STEM outreach events.</p>
     </div>
-    <div class="col-4">
-    <img src="assets/img/hcc-2.jpg" class="img-fluid">
-    </div>
 </div>
 
 ## Development Process
-
-![HCC Workshop Landing Page](assets/img/HCCworkshop_start.png){: width="33%"}
-![NYSF](assets/img/hcc-5.JPG){: width="33%"}
-![NYSF](assets/img/hcc-4.JPG){: width="33%"}
+{: .mt-5}
 
 1. We met with and interviewed senior stakeholders in the project to brainstorm ideas. We spoke to academics from the ANU Human Computer Interaction research group to find out what activities they previously run, as well as their own ideas on how to effectively promote their research. We also engaged with the ANU CECS Marketing team directly to elicit finer details on intended audience, scope, and future intentions.
 2. We developed a design proposal and commissioned an Honours student to develop a prototype using Flask. We worked with the developer to shape requirements, test the prototype and develop additional functionality. We presented the prototype to our stakeholders for further feedback.
@@ -57,12 +56,17 @@ The workshop covered a range of broad computer science topics, but also allowed 
 5. We ran the workshop at a variety of ANU CECS outreach events. Feedback from every session was used to fine-tune the workshop and activities.
 
 ## Outcomes
+{: .mt-5}
+
+The HCC Workshop has been a popular activity for students visiting ANU's College of Engineering and Computer Science (CECS) for over three years. Over 300 students have participated in the workshop, with many participants later enrolling in STEM programs at ANU. The HCC Workshop has been well received by ANU academics and professional staff, as well as the large number of students, teachers, and volunteers that have participated. While the HCC Workshop was initially run on-campus at ANU, it's success meant that it quickly expanded to in-school programs across the ACT, Australia, and has even been held overseas.
+
+![NYSF](assets/img/hcc-3.JPG){: width="33%"}
+![NYSF](assets/img/hcc-4.JPG){: width="33%"}
+![NYSF](assets/img/hcc-5.JPG){: width="33%"}
 
 ![NYSF](assets/img/hcc-6.JPG){: width="33%"}
 ![NYSF](assets/img/hcc-7.JPG){: width="33%"}
 ![NYSF](assets/img/hcc-8.JPG){: width="33%"}
-
-The HCC Workshop has been a popular activity for students visiting ANU's College of Engineering and Computer Science (CECS) for over three years. Over 300 students have participated in the workshop, with many participants later enrolling in STEM programs at ANU. The HCC Workshop has been well received by ANU academics and professional staff, as well as the large number of students, teachers, and volunteers that have participated. While the HCC Workshop was initially run on-campus at ANU, it's success meant that it quickly expanded to in-school programs across the ACT, Australia, and has even been held overseas.
 
 The HCC Workshop has been run as part of:
 
@@ -85,6 +89,7 @@ The HCC Workshop has been run as part of:
 ![ANU Open Day](assets/img/od-2.jpg){: width="49%"}
 
 ## Further Information
+{: .mt-5}
 
 Visit the [HCC Workshop website](https://hcc-workshop.anu.edu.au).
 
@@ -97,3 +102,4 @@ Paper-based worksheets are also available to support certain activities on the H
 * [Eye Tracking Worksheet (PDF)](assets/pdf/eye-tracking.pdf)
 * [Physiological Signals Worksheet (PDF)](assets/pdf/physiological-signals.pdf)
 * [Information Design Worksheet (PDF)](assets/pdf/information-design-card-sort.pdf)
+{: .mb-5}
