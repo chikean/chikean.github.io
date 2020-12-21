@@ -1,12 +1,8 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-// Bootstrap 4 Variable Overrides
+--- # Only the main Sass file needs front matter (the dashes are enough) --- // Bootstrap 4 Variable Overrides
 
-$primary: #336699;
+$primary: #0455BF;
 
-$theme-colors: (
-  "primary": $primary,
+$theme-colors: ("primary": $primary,
 );
 
 $headings-font-family: 'Montserrat';
@@ -17,105 +13,121 @@ $headings-font-family: 'Montserrat';
 // Custom Styles Below
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  .sidebar {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 15vh;
-  }
-  
-  .tagline {
-    margin-top: 15vh;
-  }
-  
-  body {
-    position: relative;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-  }
+  scroll-behavior: smooth;
+}
 
-  .display-1 {
-    font-size: 3rem;
-  }
-  
-  .display-1, .display-2, .display-4 {
-    font-weight: 600;
-    font-family: 'Montserrat'; 
-  }
-  
-  .display-4 {
-    font-size: 2rem;
-  }
-  
-  .nav-link {
-    color: white;
-  }
-  
-  a.nav-link.active { font-weight: bold !important;}
-  
-  section.resume-section {
-    border-bottom: 1px solid #dee2e6;
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important; 
-  }
-  
-  section.resume-section .resume-item .resume-date {
-      min-width: none; }
-  
-  .img-profile {
-    background: white;
-    height: 150px;
-  }
+.sidebar {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15vh;
+}
 
-  svg:hover {
-    color: #336699;
-  }
+.tagline {
+  margin-top: 15vh;
+}
 
-  .back-to-top-fixed {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: lightgray; /* Set a background color */
-    color: $primary; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-  }
+body {
+  position: relative;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 
-  .project-cover {
-    padding: 0;
-  }
+.display-1 {
+  font-size: 3rem;
+}
 
-  .dark-wrap {
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width:100%;
-    background: #000000;
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-  }
+.display-1,
+.display-2,
+.display-4 {
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
 
-  .caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40%;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
+.display-4 {
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+a.nav-link.active {
+  font-weight: bold !important;
+}
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+.img-profile {
+  background: white;
+  height: 150px;
+}
+
+svg:hover {
+  color: #336699;
+}
+
+.back-to-top-fixed {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: lightgray;
+  /* Set a background color */
+  color: $primary;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.project-cover {
+  padding: 0;
+}
+
+.dark-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
 }
 
 .project-cover:hover .caption {
@@ -130,7 +142,7 @@ html {
   // background: url('/assets/img/test-4.gif') no-repeat;
   background-size: cover;
   height: 100vh;
-  background-color: #5c595a;
+  background-color: #0455BF;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -162,14 +174,20 @@ html {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh; }
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+    min-height: 100vh;
+  }
+
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
 
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
-    padding-bottom: 3rem !important; } }
+    padding-bottom: 3rem !important;
+  }
+}
 
 @media (min-width: 576px) {
 
@@ -181,7 +199,7 @@ html {
     font-size: 8.5rem;
     line-height: 0.9;
   }
-  
+
   .lead {
     font-size: 1.5rem;
   }
