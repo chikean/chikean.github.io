@@ -33,6 +33,41 @@
         </p></v-col
       >
     </v-row>
+    <v-row align="center" justify="center" class="my-16" cols="12">
+      <v-col xs="12" md="8">
+        <h2 class="display-1 text--primary mb-10" align="center">
+          Recent news
+        </h2>
+        <v-card elevation="2" outlined>
+          <v-card-text>
+            <div></div>
+            <p class="text-subtitle-1 text--primary">
+              Symantec Enterprise Blogs / Expert Perspectives
+            </p>
+            <p class="text-weight-bold text-h5 text-md-h4">
+              Phishing for a Proactive Security Culture
+            </p>
+            <div class="text--primary">
+              This article details my approach for driving security culture
+              change within Symantec and NortonLifeLock, using an example of one
+              of the security programs that I managed.
+            </div>
+          </v-card-text>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              text
+              color="teal accent-4"
+              align="right"
+              href="https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/phishing-proactive-security-culture"
+            >
+              Read More
+              <v-icon size="24px" class="ml-5"> mdi-launch </v-icon></v-btn
+            >
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
