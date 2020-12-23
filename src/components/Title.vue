@@ -1,14 +1,9 @@
 <template>
   <v-container>
     <v-row align="center" cols="12">
-      <v-col
-        class="mb-4 px-15 px-md-5 text-sm-left text-center"
-        xs="12"
-        md="6"
-        cols="12"
-      >
-        <h1 class="text-h1 font-weight-bold mb-3">Chris Chow</h1>
-        <h2 class="text-subtitle-1">
+      <v-col class="my-4 px-15 px-md-0 text-md-left text-center" xs="12" md="6">
+        <h1 class="text-h1 font-weight-bold mb-3 primary--text">Chris Chow</h1>
+        <h2 class="text-h5 primary--text font-weight-thin text-wrap">
           Program manager, communicator, and technologist all-rounder.
         </h2>
       </v-col>
@@ -57,7 +52,7 @@
             <v-spacer></v-spacer>
             <v-btn
               text
-              color="teal accent-4"
+              color="primary"
               align="right"
               href="https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/phishing-proactive-security-culture"
             >

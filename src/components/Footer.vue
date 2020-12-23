@@ -3,9 +3,9 @@
     <v-row justify="center">
       <v-btn
         v-for="icon in icons"
-        :key="icon"
+        :key="icon.icon"
         :href="icon.href"
-        class="ma-4 white--text"
+        class="ma-4 white--text social-btn"
         icon
       >
         <v-icon size="24px">
@@ -26,3 +26,9 @@ export default {
   }),
 };
 </script>
+
+<style lang="css" scoped>
+.social-btn:hover * {
+  color: #79cfd9;
+}
+</style>
