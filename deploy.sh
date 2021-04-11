@@ -7,7 +7,7 @@ set -e
 npm run build
 
 # if you are deploying to a custom domain
-echo 'chrischow.me' > docs/CNAME
+echo 'chrischow.io' > docs/CNAME
 
 git init
 git add -A

@@ -1,11 +1,8 @@
 <template>
-  <v-container>
-    <v-row align="center" cols="12">
-      <v-col class="my-4 px-15 px-md-0 text-md-left text-center" xs="12" md="6">
-        <h1 class="text-h1 font-weight-bold mb-3 primary--text">Chris Chow</h1>
-        <h2 class="text-h5 primary--text font-weight-thin text-wrap">
-          Program manager, communicator, and technologist all-rounder.
-        </h2>
+  <v-container class="my-15">
+    <v-row justify="end">
+      <v-col xs="12" md="10" class="text-center text-md-left">
+        <h1 class="text-h1 font-weight-black mb-3 primary--text">Chris Chow</h1>
       </v-col>
       <v-col xs="12" md="6" cols="12" class="px-15">
         <p>

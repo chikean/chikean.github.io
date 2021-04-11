@@ -1,27 +1,35 @@
 <template>
-  <v-app>
-    <v-spacer></v-spacer>
+  <v-app :style="{ background: $vuetify.theme.themes[theme].background }">
     <v-main>
-      <Title />
-      <Footer />
+      <div id="app">
+        <router-view />
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Title from "./components/Title";
-import Footer from "./components/Footer";
-
 export default {
-  name: "App",
-
-  components: {
-    Title,
-    Footer,
+  computed: {
+    theme() {
+      return this.$vuetify.theme.dark ? "dark" : "light";
+    },
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
+
+<style lang="css">
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anonymous+Pro&family=Source+Sans+Pro&display=swap");
+
+p {
+  font-family: "Source Sans Pro";
+  font-size: 1.3rem;
+}
+
+.beb {
+  font-family: "Anonymous Pro";
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+</style>
