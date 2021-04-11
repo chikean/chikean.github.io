@@ -47,6 +47,7 @@
           <v-col
             v-for="(item, index) in projects"
             :key="index"
+            cols="12"
             sm="4"
             lg="4"
             xl="4"
