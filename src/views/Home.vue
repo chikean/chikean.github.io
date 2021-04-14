@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-0">
-    <v-container fluid class="my-5">
-      <v-container class="my-md-15">
+    <v-container fluid class="mt-4">
+      <v-container class="my-md-10">
         <v-row class="mt-md-16">
           <v-col>
             <h1
@@ -29,7 +29,7 @@
         </v-row>
       </v-container>
     </v-container>
-    <v-container fluid style="background: #fff8ef">
+    <v-container fluid style="background: #fff8ef" class="py-15">
       <v-container>
         <h2 class="beb">Sample projects</h2>
         <v-row class="my-10">
