@@ -44,36 +44,39 @@
           </v-chip-group>
         </v-row>
         <v-row>
-          <v-col
-            v-for="(item, index) in projects"
-            :key="index"
-            cols="12"
-            sm="4"
-            lg="4"
-            xl="4"
-            class="d-flex child-flex"
-          >
-            <v-card
-              justify="center"
-              v-bind:style="{
-                transform: 'rotate(' + getRandomArbitrary(-4, 4) + 'deg)',
-              }"
+          <transition-group name="project-cards" class="row">
+            <v-col
+              v-for="item in projects"
+              :key="item.id"
+              cols="12"
+              sm="4"
+              lg="4"
+              xl="4"
+              class="project-cards-item"
             >
-              <v-responsive :aspect-ratio="0.83">
-                <v-img
-                  :src="getImgUrl(item.img)"
-                  class="mx-5 mt-5"
-                  aspect-ratio="1"
-                ></v-img>
-                <v-card-title class="text-center justify-center">{{
-                  item.title
-                }}</v-card-title>
-                <v-card-subtitle class="text-center">{{
-                  item.text
-                }}</v-card-subtitle>
-              </v-responsive>
-            </v-card>
-          </v-col>
+              <v-card
+                max-width="379"
+                justify="center"
+                v-bind:style="{
+                  transform: 'rotate(' + getRandomArbitrary(-4, 4) + 'deg)',
+                }"
+              >
+                <v-responsive :aspect-ratio="0.83">
+                  <v-img
+                    :src="getImgUrl(item.img)"
+                    class="mx-5 mt-5"
+                    aspect-ratio="1"
+                  ></v-img>
+                  <v-card-title class="text-center justify-center">{{
+                    item.title
+                  }}</v-card-title>
+                  <v-card-subtitle class="text-center">{{
+                    item.text
+                  }}</v-card-subtitle>
+                </v-responsive>
+              </v-card>
+            </v-col>
+          </transition-group>
         </v-row>
       </v-container>
     </v-container>
@@ -201,6 +204,19 @@ export default {
 </script>
 
 <style>
+.project-cards-item {
+  transition: all 0.8s;
+}
+
+.project-cards-enter,
+.project-cards-leave-to {
+  opacity: 0;
+  transform: translate(50%, 200%);
+}
+.project-cards-leave-active {
+  position: absolute;
+}
+
 .v-card__title {
   word-break: normal !important;
 }
