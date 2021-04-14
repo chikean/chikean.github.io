@@ -10,7 +10,6 @@ export default new Vuetify({
         themes: 
             {light: {
                 primary: '1D5273',
-                // background: '#FFF8EF',
                 mark: "FDD700",
             },
             dark: {
